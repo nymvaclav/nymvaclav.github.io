@@ -1,7 +1,60 @@
-/* Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap');
+/* --------------------< Font Import >-------------------- */
 
-/* General Styles */
+/* Lato */
+@font-face {
+    font-family: 'Lato';
+    font-weight: 400;
+    src: url(../font/Lato/400.ttf);
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-weight: 700;
+    src: url(../font/Lato/700.ttf);
+}
+
+/* Montserrat */
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: url(../font/Montserrat/400.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    src: url(../font/Montserrat/700.ttf);
+}
+
+/* Open Sans */
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    src: url(../font/Open_Sans/400.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    src: url(../font/Open_Sans/700.ttf);
+}
+
+/* Roboto */
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url(../font/Roboto/400.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url(../font/Roboto/700.ttf);
+}
+
+
+
+/* --------------------< Styles >-------------------- */
 body {
     font-family: 'Open Sans', sans-serif;
     color: #EAEAEA;
@@ -22,18 +75,13 @@ h3 {
     color: #EAEAEA;
 }
 
-.project-des {
-    font-family: 'Lato', sans-serif;
-    color: #a8a8a8;
-}
-
 a {
-    color: #4da7ff;
+    color: #2c96ff;
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #EAEAEA;
 }
 
 img {
@@ -42,7 +90,7 @@ img {
     user-select: none; /* Standard syntax */
 }
 
-.maindiv {
+.crop-web {
     text-align: center;
     max-width: 438px;
     margin-left: auto;
@@ -62,19 +110,28 @@ img {
     margin-left: 20px;
 }
 
-.container {
+.project-container {
     display: flex;
     align-items: left;
     justify-content: left;
     text-align: start;
     padding: 13px;
-    padding-bottom: 8px;
+    padding-bottom: 7px;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
 }
 
-.bg {
+div.project {
     background-color: #242424;
-    border-radius: 7px;
+    border-radius: 20px;
+}
+
+span.project, p.project {
+    font-family: 'Lato', sans-serif;
+    color: #a8a8a8;
+}
+
+img.project {
+    border-radius: 20%;
 }
