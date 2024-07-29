@@ -1,10 +1,31 @@
 /* --------------------< Font Import >-------------------- */
 
+/* Arvo */
+@font-face {
+    font-family: 'Arvo';
+    font-weight: 400;
+    src: url(../font/Arvo/400.ttf);
+}
+
+@font-face {
+    font-family: 'Arvo';
+    font-weight: 400;
+    font-style: italic;
+    src: url(../font/Arvo/400_italic.ttf);
+}
+
+@font-face {
+    font-family: 'Arvo';
+    font-weight: 700;
+    src: url(../font/Lato/700.ttf);
+}
+
 /* Lato */
 @font-face {
-    font-family: 'Lato';
+    font-family: 'Arvo';
     font-weight: 400;
-    src: url(../font/Lato/400.ttf);
+    font-style: italic;
+    src: url(../font/Lato/700_italic.ttf);
 }
 
 @font-face {
@@ -57,13 +78,25 @@
 /* --------------------< Styles >-------------------- */
 body {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     color: #EAEAEA;
     background-color: #121212;
     padding: 10px;
 }
 
-h1, h2, h4, h5, h6 {
+h1 {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #EAEAEA;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+h2, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     color: #EAEAEA;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
@@ -72,6 +105,16 @@ h1, h2, h4, h5, h6 {
 
 h3 {
     font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #EAEAEA;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+span, p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     color: #EAEAEA;
 }
 
@@ -81,6 +124,7 @@ a {
 }
 
 a:hover {
+    font-weight: 400;
     color: #EAEAEA;
 }
 
@@ -129,6 +173,7 @@ div.project {
 
 span.project, p.project {
     font-family: 'Lato', sans-serif;
+    font-weight: 400;
     color: #a8a8a8;
 }
 
