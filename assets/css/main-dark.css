@@ -75,7 +75,7 @@
 
 
 
-/* --------------------< Styles >-------------------- */
+/* --------------------< Universal Styles >-------------------- */
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -151,10 +151,6 @@ img {
     background: rgb(61, 61, 61);
 }
 
-.social {
-    margin-left: 20px;
-}
-
 .project-container {
     display: flex;
     align-items: left;
@@ -180,4 +176,62 @@ span.project, p.project {
 
 img.project {
     border-radius: 20%;
+}
+
+/* --------------------< Styles for social networks >-------------------- */
+
+/* Instagram */
+img.social-instagram {
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/social_media/v2/instagram/instagram_white/instagram-48.png');
+    background-size: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+img.social-instagram:hover {
+    background-image: url('../img/social_media/v2/instagram/instagram_grey/instagram-48.png');
+}
+
+/* GitHub */
+img.social-github {
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/social_media/v2/github/github_white/github-48.png');
+    background-size: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+img.social-github:hover {
+    background-image: url('../img/social_media/v2/github/github_grey/github-48.png');
+}
+
+/* Discord */
+img.social-discord {
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/social_media/v2/discord/discord_white/discord-48.png');
+    background-size: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+img.social-discord:hover {
+    background-image: url('../img/social_media/v2/discord/discord_grey/discord-48.png');
+}
+
+/* Steam */
+img.social-steam {
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/social_media/v2/steam/steam_white/steam-48.png');
+    background-size: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+img.social-steam:hover {
+    background-image: url('../img/social_media/v2/steam/steam_grey/steam-48.png');
 }

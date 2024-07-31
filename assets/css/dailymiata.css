@@ -1,0 +1,51 @@
+/* --------------------< Styles for icons >-------------------- */
+
+/* Documentation */
+img.icon-documentation {
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/document/documentation.png');
+    background-size: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+img.icon-documentation:hover {
+    background-image: url('../img/document/document_hover.png');
+}
+
+/* Discord */
+img.icon-discord {
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/social_media/v2/discord/discord_white/discord-48.png');
+    background-size: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+img.icon-discord:hover {
+    background-image: url('../img/social_media/v2/discord/discord_grey/discord-48.png');
+}
+
+/* --------------------< Style for Invite button >-------------------- */
+
+button.invite {
+    height: 40px;
+    width: 80px;
+    background-color: #9c22ff;
+    border-radius: 10%;
+    border: none;
+    cursor: pointer;
+}
+
+button.invite:hover {
+    background-color: #7607d1;
+}
+
+span.invite, p.invite {
+    color: rgb(255, 255, 255);
+    font-weight: 700; font-family:
+    Montserrat;
+    font-size: 18px;
+}
