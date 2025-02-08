@@ -1,78 +1,4 @@
-/* --------------------< Font Import >-------------------- */
-
-/* Arvo */
-@font-face {
-    font-family: 'Arvo';
-    font-weight: 400;
-    src: url(../font/Arvo/400.ttf);
-}
-
-@font-face {
-    font-family: 'Arvo';
-    font-weight: 400;
-    font-style: italic;
-    src: url(../font/Arvo/400_italic.ttf);
-}
-
-@font-face {
-    font-family: 'Arvo';
-    font-weight: 700;
-    src: url(../font/Lato/700.ttf);
-}
-
-/* Lato */
-@font-face {
-    font-family: 'Arvo';
-    font-weight: 400;
-    font-style: italic;
-    src: url(../font/Lato/700_italic.ttf);
-}
-
-@font-face {
-    font-family: 'Lato';
-    font-weight: 700;
-    src: url(../font/Lato/700.ttf);
-}
-
-/* Montserrat */
-@font-face {
-    font-family: 'Montserrat';
-    font-weight: 400;
-    src: url(../font/Montserrat/400.ttf);
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    src: url(../font/Montserrat/700.ttf);
-}
-
-/* Open Sans */
-@font-face {
-    font-family: 'Open Sans';
-    font-weight: 400;
-    src: url(../font/Open_Sans/400.ttf);
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-weight: 700;
-    src: url(../font/Open_Sans/700.ttf);
-}
-
-/* Roboto */
-@font-face {
-    font-family: 'Roboto';
-    font-weight: 400;
-    src: url(../font/Roboto/400.ttf);
-}
-
-@font-face {
-    font-family: 'Roboto';
-    font-weight: 700;
-    src: url(../font/Roboto/700.ttf);
-}
-
+@import url("/assets/css/font.css");
 
 
 /* --------------------< Universal Styles >-------------------- */
@@ -137,7 +63,7 @@ img {
 
 .crop-web {
     text-align: center;
-    max-width: 600px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
@@ -172,70 +98,47 @@ div.project {
     border-radius: 20px;
 }
 
+@keyframes project-hover {
+    from {border: 2px solid #242424;}
+    to {border: 2px solid #EAEAEA;}
+}
+
+div.project:hover {
+    animation-name: project-hover;
+    animation-fill-mode: forwards;
+    /* After the animation ends, the element will look the way it
+    looked in the last keyframe until user moves away their mouse,
+    when :hover will not apply anymore and the element will
+    return to it's default state. */
+    animation-duration: 1s;
+}
+
 span.project, p.project {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    color: #a8a8a8;
+    color: #b1b1b1;
 }
 
 img.project {
     border-radius: 20%;
 }
 
+p.quote {
+    background-color: rgb(29, 29, 29);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+p.quote > span {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
 /* --------------------< Styles for social networks >-------------------- */
 
-/* Instagram */
-img.social-instagram {
-    width: 40px;
-    height: 40px;
-    background-image: url('../img/social_media/v2/instagram/instagram_white/instagram-48.png');
-    background-size: cover;
+img.social-networks-icons {
     margin-left: 10px;
     margin-right: 10px;
-}
-
-img.social-instagram:hover {
-    background-image: url('../img/social_media/v2/instagram/instagram_grey/instagram-48.png');
-}
-
-/* GitHub */
-img.social-github {
-    width: 40px;
-    height: 40px;
-    background-image: url('../img/social_media/v2/github/github_white/github-48.png');
-    background-size: cover;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-img.social-github:hover {
-    background-image: url('../img/social_media/v2/github/github_grey/github-48.png');
-}
-
-/* Discord */
-img.social-discord {
-    width: 40px;
-    height: 40px;
-    background-image: url('../img/social_media/v2/discord/discord_white/discord-48.png');
-    background-size: cover;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-img.social-discord:hover {
-    background-image: url('../img/social_media/v2/discord/discord_grey/discord-48.png');
-}
-
-/* Steam */
-img.social-steam {
-    width: 40px;
-    height: 40px;
-    background-image: url('../img/social_media/v2/steam/steam_white/steam-48.png');
-    background-size: cover;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-img.social-steam:hover {
-    background-image: url('../img/social_media/v2/steam/steam_grey/steam-48.png');
 }

@@ -4,7 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Václav | Home</title>
-        <link rel="stylesheet" href="assets/css/main-dark.css"/>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="/assets/css/main-dark.css"/>
+        <link rel="stylesheet" href="/assets/css/font.css"/>
+        <link rel="stylesheet" href="/assets/css/index.css"/>
     </head>
     <body>
         <div class="crop-web">
@@ -19,23 +23,45 @@
             </p>
 
             <!-- Programming languages -->
-            <div style="display: flex; align-items: center; justify-content: center;">
-                <img src="assets/img/icons/code.png" alt="code icon" height="20px" width="20px" style="margin-top: 2px; margin-right: 4px;">
-                <div style="margin-right: 20px;">
-                    <span>
-                        <a href="https://www.python.org/">Python</a>,
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>,
-                        <a href="https://www.w3schools.com/css/">CSS</a>
-                    </span>
+            <div id="subtitle-icons">
+                <div style="display: flex;">
+                    <img src="assets/img/icons/code.png" alt="code icon" height="20px" width="20px" title="Programming languages I can confidently develop with" style="margin-top: 2px; margin-right: 5px;">
+                    <div>
+                        <span>
+                            <a href="https://www.python.org/">Python</a>,
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>,
+                            <a href="https://www.w3schools.com/css/">CSS</a>
+                        </span>
+                    </div>
                 </div>
-                <img src="assets/img/icons/books/books_white.png" alt="code icon" height="20px" width="20px" style="margin-top: 2px; margin-right: 4px; margin-left: 20px;">
-                <div>
-                    <span>
-                        <a href="https://kotlinlang.org/">Kotlin</a>,
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>
-                    </span>
+                
+                <div style="display: flex;">
+                    <img src="assets/img/icons/books/books_white.png" alt="books icon" height="20px" width="20px" title="Programming languages I have started to learn recently. I might know just the basics, maybe not even that, but I am actively learning them." style="margin-top: 2px; margin-right: 4px;">
+                    <div>
+                        <span>
+                            <a href="https://kotlinlang.org/">Kotlin</a>,
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>
+                        </span>
+                    </div>
                 </div>
+
+                <div style="display: flex;">
+                    <img src="assets/img/icons/ide-icon.png" alt="ide icon" height="19px" width="19px" title="The IDE I use" style="margin-top: 3px; margin-right: 6px;">
+                    <!-- height and width is 19px, not 20px to adjust for optical (human) sense of icon scale. more about this here: https://marvelapp.com/blog/optical-adjustment-logic-vs-designers/ -->
+                    <div>
+                        <span>
+                            <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+                        </span>
+                    </div>  
+                </div>
+
             </div>
+
+            <!-- quote -->
+            <p class="quote">
+                <span>“ You never fail until you stop trying. ”</span><br>
+                <i><a href="https://en.wikipedia.org/wiki/Albert_Einstein">Albert Einstein</a></i>
+            </p>
             
             <!-- Social newtorks -->
             <hr style="margin-top:30px;">
@@ -43,125 +69,120 @@
                 <h2>Social Networks</h2>
                 <div style="margin-top: -10px;">
                     <a href="https://www.instagram.com/jdisepovesit/">
-                        <img class="social-instagram">
+                        <img height="41px" width="41px" src="/assets/img/social_media/v2/instagram/instagram_white/instagram-48.png" class="social-networks-icons">
+                        <!-- height and width is 41px, not 40px to adjust for optical (human) sense of icon scale. more about this here: https://marvelapp.com/blog/optical-adjustment-logic-vs-designers/ -->
                     </a>
 
                     <a href="https://github.com/nymvaclav/">
-                        <img class="social-github">
+                        <img height="40px" width="40px" src="/assets/img/social_media/v2/github/github_white/github-48.png" class="social-networks-icons">
                     </a>
 
                     <a href="https://discordapp.com/users/589853193387769875/">
-                        <img class="social-discord">
+                        <img height="40px" width="40px" src="/assets/img/social_media/v2/discord/discord_white/discord-48.png" class="social-networks-icons">
                     </a>
 
                     <a href="https://steamcommunity.com/id/notyourmother_/">
-                        <img class="social-steam">
+                        <img height="40px" width="40px" src="/assets/img/social_media/v2/steam/steam_white/steam-48.png" class="social-networks-icons">
                     </a>
                 </div>
             </div>
-            <hr style="margin-top:10px;">
+            <hr style="margin-top: 10px;">
+
             <!-- Projects -->
             <div>
-                <h2>Projects</h2>
+                <h2>My Projects</h2>
                 <div>
 
                     <!-- Project: Barevný Svět Děti -->
-                    <div class="project-base">
-                        <div class="project">
-                            <div class="project-container">
-                                <div>
-                                    <img src="assets/img/project/nymvaclav-github-io/pfp.png" width="70px" height="70px" class="project">
-                                </div>
-                                <div style="margin-left: 15px;">
-                                    <div style="margin-bottom: 4px; margin-top: -1px;">
-                                        <h3 style="margin: 0px;"><!-- title -->nymvaclav.github.io</h3>
-                                    </div>
+                    <a href="/projects/nymvaclav-github-io.html">
+                        <div class="project-base">
+                            <div class="project">
+                                <div class="project-container">
                                     <div>
-                                        <span class="project"><!-- description -->Project type: Website</span><br>
-                                        <span class="project"><!-- description -->Status: Finished!</span>
+                                        <img src="/assets/img/project/nymvaclav-github-io/pfp.png" width="70px" height="70px" class="project">
                                     </div>
-                                </div>
-                                <div style="margin-left: auto;">
-                                    <a href="nymvaclav-github-io.html">
-                                        <img src="assets\img\arrow.png" width="58px" height="70px">
-                                    </a>
+                                    <div style="margin-left: 15px;">
+                                        <div style="margin-bottom: 4px; margin-top: -1px; display: flex;">
+                                            <h3 style="margin: 0px;"><!-- title -->nymvaclav.github.io</h3>
+                                            <img src="/assets//img/icons/pin/pin.png" width="16px" height="16px" style="margin-top: 3px; margin-left: 7px;" title="This project has been pinned — you will always find it at the top of the 'My Projects' page.">
+                                        </div>
+                                        <div>
+                                            <span class="project"><!-- description -->Project type: Website</span><br>
+                                            <span class="project"><!-- description -->Status: Finished!</span>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="project-base">
-                        <div class="project">
-                            <div class="project-container">
-                                <div>
-                                    <img src="assets/img/project/bsd/bsd-icon.png" width="70px" height="70px" class="project">
-                                </div>
-                                <div style="margin-left: 15px;">
-                                    <div style="margin-bottom: 4px; margin-top: -1px;">
-                                        <h3 style="margin: 0px;"><!-- title -->Barevný svět dětí</h3>
-                                    </div>
+                    <a href="/projects/barevnysvetdeti.html">
+                        <div class="project-base">
+                            <div class="project">
+                                <div class="project-container">
                                     <div>
-                                        <span class="project"><!-- description -->Project type: Django Web Server</span><br>
-                                        <span class="project"><!-- description -->Status: In development</span>
+                                        <img src="/assets/img/project/bsd/bsd-icon.png" width="70px" height="70px" class="project">
                                     </div>
-                                </div>
-                                <div style="margin-left: auto;">
-                                    <a href="barevnysvetdeti.html">
-                                        <img src="assets\img\arrow.png" width="58px" height="70px">
-                                    </a>
+                                    <div style="margin-left: 15px;">
+                                        <div style="margin-bottom: 4px; margin-top: -1px; display: flex;">
+                                            <h3 style="margin: 0px;"><!-- title -->Barevný svět dětí</h3>
+                                            <img src="/assets//img/icons/pin/pin.png" width="16px" height="16px" style="margin-top: 3px; margin-left: 7px;" title="This project has been pinned — you will always find it at the top of the 'My Projects' page.">
+                                        </div>
+                                        <div>
+                                            <span class="project"><!-- description -->Project type: Django Web Server</span><br>
+                                            <span class="project"><!-- description -->Status: In development...</span>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="project-base">
-                        <div class="project">
-                            <div class="project-container">
-                                <div>
-                                    <img src="assets/img/project/dailymiata/dailymiata-profile-picture.jpg" width="70px" height="70px" class="project">
-                                </div>
-                                <div style="margin-left: 15px;">
-                                    <div style="margin-bottom: 4px; margin-top: -1px;">
-                                        <h3 style="margin: 0px;"><!-- title -->DailyMiata</h3>
-                                    </div>
+                    <a href="/projects/dailymiata.html">
+                        <div class="project-base">
+                            <div class="project">
+                                <div class="project-container">
                                     <div>
-                                        <span class="project"><!-- description -->Project type: Discord Bot</span><br>
-                                        <span class="project"><!-- description -->Status: Finished!</span>
+                                        <img src="/assets/img/project/dailymiata/dailymiata-profile-picture.jpg" width="70px" height="70px" class="project">
                                     </div>
-                                </div>
-                                <div style="margin-left: auto;">
-                                    <a href="dailymiata.html">
-                                        <img src="assets\img\arrow.png" width="58px" height="70px">
-                                    </a>
+                                    <div style="margin-left: 15px;">
+                                        <div style="margin-bottom: 4px; margin-top: -1px;">
+                                            <h3 style="margin: 0px;"><!-- title -->DailyMiata</h3>
+                                        </div>
+                                        <div>
+                                            <span class="project"><!-- description -->Project type: Discord Bot</span><br>
+                                            <span class="project"><!-- description -->Status: Finished!</span>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="project-base">
-                        <div class="project">
-                            <div class="project-container">
-                                <div>
-                                    <img src="assets/img/project/image-filetype-converter/ifc-icon.png" width="70px" height="70px" class="project">
-                                </div>
-                                <div style="margin-left: 15px;">
-                                    <div style="margin-bottom: 4px; margin-top: -1px;">
-                                        <h3 style="margin: 0px;"><!-- title -->Image Filetype Convertor</h3>
-                                    </div>
+                    <a href="/projects/image-filetype-converter.html">
+                        <div class="project-base">
+                            <div class="project">
+                                <div class="project-container">
                                     <div>
-                                        <span class="project"><!-- description -->Project type: GUI Application</span><br>
-                                        <span class="project"><!-- description -->Status: Finished!</span>
+                                        <img src="/assets/img/project/image-filetype-converter/ifc-icon.png" width="70px" height="70px" class="project">
                                     </div>
-                                </div>
-                                <div style="margin-left: auto;">
-                                    <a href="image-filetype-converter.html">
-                                        <img src="assets\img\arrow.png" width="58px" height="70px">
-                                    </a>
+                                    <div style="margin-left: 15px;">
+                                        <div style="margin-bottom: 4px; margin-top: -1px;">
+                                            <h3 style="margin: 0px;"><!-- title -->Image Filetype Convertor</h3>
+                                        </div>
+                                        <div>
+                                            <span class="project"><!-- description -->Project type: GUI Application</span><br>
+                                            <span class="project"><!-- description -->Status: Finished!</span>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
-                    </div>
-
+                    </a>
 
                 </div>
             </div>
