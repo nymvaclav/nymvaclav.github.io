@@ -1,0 +1,30 @@
+.article-metadata {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+
+.article-metadata > div {
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    .article-metadata {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 30px;
+        gap: 10px;
+    }
+}
+
+.article p, .article ul, .article li, .article span {
+    text-align: start;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
