@@ -129,3 +129,9 @@ img.social-networks-icons {
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
