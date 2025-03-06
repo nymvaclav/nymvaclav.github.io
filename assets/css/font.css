@@ -1,0 +1,74 @@
+/* --------------------< Font Import >-------------------- */
+
+/* Arvo */
+@font-face {
+    font-family: 'Arvo';
+    font-weight: 400;
+    src: url(/assets/font/Arvo/400.ttf);
+}
+
+@font-face {
+    font-family: 'Arvo';
+    font-weight: 400;
+    font-style: italic;
+    src: url(/assets/font/Arvo/400_italic.ttf);
+}
+
+@font-face {
+    font-family: 'Arvo';
+    font-weight: 700;
+    src: url(/assets/font/Lato/700.ttf);
+}
+
+/* Lato */
+@font-face {
+    font-family: 'Arvo';
+    font-weight: 400;
+    font-style: italic;
+    src: url(/assets/font/Lato/700_italic.ttf);
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-weight: 700;
+    src: url(/assets/font/Lato/700.ttf);
+}
+
+/* Montserrat */
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: url(/assets/font/Montserrat/400.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    src: url(/assets/font/Montserrat/700.ttf);
+}
+
+/* Open Sans */
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    src: url(/assets/font/Open_Sans/400.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    src: url(/assets/font/Open_Sans/700.ttf);
+}
+
+/* Roboto */
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url(/assets/font/Roboto/400.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url(/assets/font/Roboto/700.ttf);
+}

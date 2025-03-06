@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Václav | Articles</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="/assets/css/main-dark.css"/>
+        <link rel="stylesheet" href="/assets/css/font.css"/>
+        <link rel="stylesheet" href="/assets/css/article.css"/>
+        <link rel="stylesheet" href="/assets/css/code-snippet.css"/>
+    </head>
+    <body>
+        <!-- Jump to the top (empty elemant) -->
+        <div id="site-top"></div>
+        <div class="crop-web">
+            <!-- Navigation! -->
+            <p style="text-align: start;">
+                <a href="/index.html">INDEX</a> / <a href="/projects/nymvaclav-github-io.html">HOW TO CLONE A GIT REPOSITORY</a>
+            </p>
+
+            <!-- Heading -->
+            <h1 style="margin-bottom: 0px;">How to clone a Git repository.</h1>
+            <hr>
+
+            <!-- Metadata -->
+            <div class="article-metadata">
+                <div title="Written by...">
+                    <img src="/assets/img/icons/article/author.png" width="20px" height="20px" style="margin-top: 1px; margin-right: 5px;">
+                    <span>Václav (nymvaclav)</span>
+                </div>
+                <div title="Published on...">
+                    <img src="/assets/img/icons/article/calendar.png" width="20px" height="20px" style="margin-top: 1px; margin-right: 5px;">
+                    <span>10. February 2025</span>
+                </div>
+                <div title="Last edited on...">
+                    <img src="/assets/img/icons/article/edit.png" width="20px" height="20px" style="margin-top: 1px; margin-right: 5px;">
+                    <span>27. February 2025</span>
+                </div>
+            </div>
+
+            <div class="article">
+                <div>
+                    <h2>Before we start</h2>
+                    <p>
+                        If you're new to <a href="https://git-scm.com/">Git</a>, and have never used a <a href="https://en.wikipedia.org/wiki/Command-line_interface">terminal</a>, you might
+                        have trouble understanding what are we doing. I will try my best to explain every step, but if you do not have any expirience with <a href="https://en.wikipedia.org/wiki/Command-line_interface">CLI</a>
+                        based applications, this article might not be for you.
+                    </p>
+                    <p style="margin-bottom: -10px;">
+                        In this article you will learn...
+                    </p>
+                    <ul>
+                        <li>How to install <a href="https://git-scm.com/">Git</a></li>
+                        <li>How to clone a <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories">repository</a> from <a href="https://github.com/">GitHub</a> into your computer</li>
+                        <li>Some basics about <a href="https://git-scm.com/">Git</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Installing Git</h2>
+                    <p>
+                        Before we install <a href="https://git-scm.com/">Git</a>, we should check if it is not already installed. We can do that by opening up a terminal (or Powershell/CMD on Windows)
+                        and executing this command:
+                    </p>
+                    <div class="code-snippet">
+                        <span class="code-snippet-line-number">$</span><span>git --version</span>
+                    </div>
+                    <p>
+                        If Git is not installed yet, you will see this error on Windows...
+                    </p>
+                    <div class="code-snippet">
+                        <span class="code-snippet-line-number">1</span><span class="code-reply">'git' is not recognized as an internal or external command,</span><br>
+                        <span class="code-snippet-line-number">2</span><span class="code-reply">operable program or batch file.</span>
+                    </div>
+                    <p>...or this error on Linux (the error message might look different based on your distribution of Linux).</p>
+                    <div class="code-snippet">
+                        <span class="code-snippet-line-number">1</span><span class="code-reply">-bash: git: command not found</span>
+                    </div>
+                    <p>
+                        If <a href="https://git-scm.com/">Git</a> is already installed, you will see a message like this appear in your terminal:
+                    </p>
+                    <div class="code-snippet">
+                        <span class="code-snippet-line-number">Windows:</span><span class="code-reply">git version 2.45.2.windows.1</span><br>
+                        <span class="code-snippet-line-number">Linux (Debian):</span><span class="code-reply">git version 2.39.5</span>
+                    </div>
+                    <p>
+                        If <a href="https://git-scm.com/">Git</a> is already installed, then you can skip this step. If <a href="https://git-scm.com/">Git</a> is not installed yet, we will need to install it first.
+                    </p>
+                    <p>
+                        If you are on Windows, you will have download the executable <i>(.exe)</i> from <a href="https://git-scm.com/">Git</a>'s website and then install it. You can download the <i>.exe</i> file <a href="https://git-scm.com/downloads">here</a>.
+                    </p>
+                    <p>
+                        Installing <a href="https://git-scm.com/">Git</a> on Linux is much easier thanks to package managers. If you are using Linux, please enter one of these commands into your terminal, depending on your package manager:
+                    </p>
+                    <div class="code-snippet">
+                        <span class="code-snippet-line-number">APT (Debian):</span><span>sudo apt install git-all</span><br>
+                        <span class="code-snippet-line-number">DNF (Fedora):</span><span>sudo dnf install git-all</span><br>
+                        <span class="code-snippet-line-number">Pacman (Arch):</span><span>pacman -S git</span>
+                    </div>
+                    <p>
+                        After installing Git, try checking Git's version using the command bellow to verify that Git has been successfully installed. Please note <b>most Linux distributions come with Git already preinstalled!</b>
+                        If you saw an error in your terminal, please check you typed the command correct first!
+                    </p>
+                    <div class="code-snippet">
+                        <span class="code-snippet-line-number">$</span><span>git --version</span>
+                    </div>
+                </div>
+                <div>
+                    <h2>What is a repository</h2>
+                    <p>
+                        A repository is like a special storage space (well, just a folder) where you keep all the important parts of a project together.
+                        Think of it as a dedicated folder on your computer or online where you store all the files,
+                        documents, and information related to a particular project. This makes it easy to organize,
+                        manage, and share your work with others.
+                    </p>
+                    <p>
+                        Now imagine that you have created a project, and you want to play with it a little. You know, make a few changes here
+                        and there, and suddenly, boom! You broke the project and don't have any idea how to return it to the state it was in before.
+                    </p>
+                    <p>
+                        That's where Git comes in. Once you finish one part of a project, you can save it like a checkpoint in a video game and continue coding.
+                        If you destroy something or want to return the project to the state it was in a few days ago, you can use Git for that.
+                    </p>
+                    <p>
+                        So how to use Git? <i style="color: grey;">Quick Note: You will learn Git faster if you try using it yourself, so I recommend
+                        you to follow along.</i> First of all, let's create a folder called <b>test-project</b>. Please, open up a terminal and
+                        change your directory into this folder.
+                    </p>
+                    <div class="code-snippet">
+                        <span class="code-snippet-line-number">$</span><span>cd test-project/</span>
+                    </div>
+                    <p>
+                        Now let's turn this simple folder into a repository! To do that, we will use the command bellow to tell Git we want to initialise
+                        a repository in that folder.
+                    </p>
+                    <div class="code-snippet">
+                        <span class="code-snippet-line-number">$</span><span>git init</span><br>
+                        <span class="code-snippet-line-number">1</span><span class="code-reply">Initialized empty Git repository in /home/admin/test-project/.git/</span>
+                    </div>
+                    <p>
+                        Git has now created a .git directory in our repository. Let's create a few files, so Git has something to track!
+                    </p>
+                    <div class="code-snippet">
+                        <span class="code-snippet-line-number">$</span><span>echo "lorem ipsum dolor sit amet" > file1.txt</span><br>
+                        <span class="code-snippet-line-number">$</span><span>echo "ah lare diablo del paro" > file2.txt</span>
+                    </div>
+                    <p>
+                        Remember how I talked about the checkpoints we can create with Git? Now it is the time to create our first checkpoint.
+                        To do that, we will first need to tell Git which files to include. You can do that by either specifiying the name of the file we want to track like this...
+                    </p>
+                    <div class="code-snippet">
+                        <span class="code-snippet-line-number">$</span><span>git add file1.txt</span>
+                    </div>
+                    <p>
+                        ...or we can just tell Git to include all files in our repository in the checkpoint we will create soon:
+                    </p>
+                    <div class="code-snippet">
+                        <span class="code-snippet-line-number">$</span><span>git add .</span>
+                    </div>
+                    <p>
+                        The files we will include here
+                        will be tracked, and the files that we don't include won't. This means that if we choose to track file1.txt, then create a checkpoint, then modify the data this file is storing,
+                        and then return back to the checkpoint, file1.txt will return to the state it was in when we made that checkpoint. If we choose not to include the file into the 
+                        checkpoint, then modify the data inside of it, and then return back to the checkpoint, the data it this file will stay modified.
+                    </p>
+                    <p>
+                        Anyways, Git now knows which files we want to include into this checkpoint. Now let's create the checkpoint itself! Before we do it though,
+                        I have been refering to commits as checkpoints, because it's easier to explain it this way. These 'checkpoints' are actually called commits, and
+                        we will create one just now using the command bellow.
+                    </p>
+                    <div class="code-snippet">
+                        <span class="code-snippet-line-number">$</span><span>git commit -m "My first commit"</span>
+                    </div>
+                    <p>
+                        Let's break down this command. <b>git commit</b> is the command we are exectuing — the command that creates these checkpoints.
+                        Next it the <b>-m</b> flag. This is optional and means "message". By using this flag we tell Git that we will give this commit a name.
+                        After that there is the <b>"My first commit"</b> part, which is the name of this commit (checkpoint).
+                    </p>
+                </div>
+                <div>
+                    <h2>Cloning a repository from GitHub</h2>
+                    <p>
+                        So what does "cloning a repository" actually mean? It's simple! We will specify a repository we would like to clone
+                        and Git will make a copy of that repository from GitHub's servers into our local machine.
+                    </p>
+                    <p>
+                        Let's clone a repository, shall we? This website it completly open source,
+                        this means that I released all the HTML and CSS code publicly for everyone to
+                        see on GitHub. Do you want a copy of it? No? Well, I will show you how to do it anyways!
+                    </p>
+                    <div class="code-snippet">
+                        <span class="code-snippet-line-number">$</span><span>git clone https://github.com/nymvaclav/nymvaclav.github.io</span>
+                    </div>
+                    <p>
+                        <b>git clone</b> is the command that tells Git to clone a remote repository, and <b>https://github.com/nymvaclav/nymvaclav.github.io</b> is a URL address pointing to this repository
+                        on GitHub.
+                    </p>
+                </div>
+                <div>
+                    <h2>Final thoughts</h2>
+                    <p>
+                        As you can see, using Git is really straightforward and simple. In this article I showed you how to use some parts of Git's CLI, but there
+                        is much more to learn about Git. Also, if you do not like command line interfaces, GitHub released their version of Git with graphical user interface. I have tried using it already in the past,
+                        but I just prefer to use the CLI. I guess everyone has different preferances.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Actions at the bottom of the site  -->
+            <div style="margin-bottom: 10px;">
+                <a href="#site-top">Jump to the top </a>
+                <span>/</span>
+                <a href="/index.html"> Homepage</a>
+            </div>
+
+        </div>
+    </body>
+</html>

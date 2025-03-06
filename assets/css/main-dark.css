@@ -1,0 +1,137 @@
+@import url("/assets/css/font.css");
+
+
+/* --------------------< Universal Styles >-------------------- */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #EAEAEA;
+    background-color: #121212;
+    padding: 10px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #EAEAEA;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+h2, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #EAEAEA;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #EAEAEA;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+span, p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #EAEAEA;
+}
+
+a {
+    font-weight: 400;
+    color: #2c96ff;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: 400;
+    color: #a03aff;
+}
+
+img {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.crop-web {
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+::-moz-selection {
+    background: rgb(61, 61, 61);
+}
+  
+::selection {
+    background: rgb(61, 61, 61);
+}
+
+.project-container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: start;
+    padding: 13px;
+    padding-bottom: 7px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+div.project-base {
+    margin-bottom: 10px;
+}
+
+div.project {
+    border: 2px solid #242424;
+    border-radius: 20px;
+}
+
+@keyframes project-hover {
+    from {border: 2px solid #242424;}
+    to {border: 2px solid #EAEAEA;}
+}
+
+div.project:hover {
+    animation-name: project-hover;
+    animation-fill-mode: forwards;
+    /* After the animation ends, the element will look the way it
+    looked in the last keyframe until user moves away their mouse,
+    when :hover will not apply anymore and the element will
+    return to it's default state. */
+    animation-duration: 1s;
+}
+
+span.project, p.project {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #b1b1b1;
+}
+
+img.project {
+    border-radius: 20%;
+}
+
+/* --------------------< Styles for social networks >-------------------- */
+
+img.social-networks-icons {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
